@@ -15,7 +15,7 @@ void lesser_m(int x0, int y0, int x1, int y1, int dx, int dy){
 		putpixel(x0, y0, RED);
 		delay(10);
 		
-		if(p0<1){
+		if(p0<0){
 			x0 += 1;
 			p0 = p0 + (2*dy);
 		}
@@ -39,7 +39,7 @@ void greater_m(int x0, int y0, int x1, int y1, int dx, int dy){
 		putpixel(x0, y0, RED);
 		delay(10);
 		
-		if(p0<1){
+		if(p0<0){
 			y0 += 1;
 			p0 = p0 + (2*dx);
 		}
