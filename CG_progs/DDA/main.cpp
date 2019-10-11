@@ -24,7 +24,7 @@ int main(){
 	dy = dy/steps;
 	
 	for(int i=0; i<=steps; i++){
-		putpixel(x0,y0,4);
+		putpixel(int(x0+0.5), int(y0+0.5), 4);
 		delay(50);
 		x0 += dx;
 		y0 += dy;
