@@ -10,7 +10,7 @@ void lesser_m(int x0, int y0, int x1, int y1, int dx, int dy){
 	
 	int p0 = (2*dy)-dx;
 	
-	while(x0!=x1 && y0!=y1){
+	while(x0!=x1 || y0!=y1){
 		
 		putpixel(x0, y0, RED);
 		delay(10);
@@ -34,7 +34,7 @@ void greater_m(int x0, int y0, int x1, int y1, int dx, int dy){
 	
 	int p0 = (2*dx)-dy;
 	
-	while(x0!=x1 && y0!=y1){
+	while(x0!=x1 || y0!=y1){
 		
 		putpixel(x0, y0, RED);
 		delay(10);
